@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project MCH</title>
+    <style>
+      body { font-family: system-ui, Arial, sans-serif; margin: 40px; line-height: 1.5; }
+      .card { max-width: 680px; padding: 24px; border: 1px solid #ddd; border-radius: 12px; }
+      button { padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; cursor: pointer; }
+      small { color: #666; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>🚀 Project MCH</h1>
+      <p>Se stai leggendo questo, GitHub → Vercel funziona.</p>
+
+      <button id="btn">Cliccami</button>
+      <p><small id="msg">Nessun click ancora…</small></p>
+    </div>
+
+    <script>
+      const btn = document.getElementById("btn");
+      const msg = document.getElementById("msg");
+      let count = 0;
+
+      btn.addEventListener("click", () => {
+        count++;
+        msg.textContent = `Click: ${count}`;
+      });
+    </script>
+  </body>
+</html>
