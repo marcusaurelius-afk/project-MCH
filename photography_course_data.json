@@ -1,0 +1,1636 @@
+{
+  "lessons": [
+    {
+      "id": "L01",
+      "title": "Cos’è una foto + triangolo dell’esposizione",
+      "description": "Lezione micro-learning con teoria essenziale e pratica guidata per Nikon Coolpix P90.",
+      "steps": [
+        "Spiegazione semplice",
+        "Spiegazione pro",
+        "Concetti chiave",
+        "Errori tipici",
+        "Quiz",
+        "Esercizio pratico",
+        "Criteri successo",
+        "Troubleshooting"
+      ],
+      "settings": {
+        "camera": "Nikon Coolpix P90",
+        "mode": "P/A/S/M secondo obiettivo",
+        "iso": "64-400 consigliato (800+ emergenza)",
+        "note": "Sensore piccolo: evitare ISO alti quando possibile."
+      },
+      "tags": [
+        "principianti",
+        "p90",
+        "fotografia"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 20
+    },
+    {
+      "id": "L02",
+      "title": "Tempo di scatto (mosso)",
+      "description": "Lezione micro-learning con teoria essenziale e pratica guidata per Nikon Coolpix P90.",
+      "steps": [
+        "Spiegazione semplice",
+        "Spiegazione pro",
+        "Concetti chiave",
+        "Errori tipici",
+        "Quiz",
+        "Esercizio pratico",
+        "Criteri successo",
+        "Troubleshooting"
+      ],
+      "settings": {
+        "camera": "Nikon Coolpix P90",
+        "mode": "P/A/S/M secondo obiettivo",
+        "iso": "64-400 consigliato (800+ emergenza)",
+        "note": "Sensore piccolo: evitare ISO alti quando possibile."
+      },
+      "tags": [
+        "principianti",
+        "p90",
+        "fotografia"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 20
+    },
+    {
+      "id": "L03",
+      "title": "Diaframma (sfondo sfocato / profondità di campo)",
+      "description": "Lezione micro-learning con teoria essenziale e pratica guidata per Nikon Coolpix P90.",
+      "steps": [
+        "Spiegazione semplice",
+        "Spiegazione pro",
+        "Concetti chiave",
+        "Errori tipici",
+        "Quiz",
+        "Esercizio pratico",
+        "Criteri successo",
+        "Troubleshooting"
+      ],
+      "settings": {
+        "camera": "Nikon Coolpix P90",
+        "mode": "P/A/S/M secondo obiettivo",
+        "iso": "64-400 consigliato (800+ emergenza)",
+        "note": "Sensore piccolo: evitare ISO alti quando possibile."
+      },
+      "tags": [
+        "principianti",
+        "p90",
+        "fotografia"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 20
+    },
+    {
+      "id": "L04",
+      "title": "ISO (rumore)",
+      "description": "Lezione micro-learning con teoria essenziale e pratica guidata per Nikon Coolpix P90.",
+      "steps": [
+        "Spiegazione semplice",
+        "Spiegazione pro",
+        "Concetti chiave",
+        "Errori tipici",
+        "Quiz",
+        "Esercizio pratico",
+        "Criteri successo",
+        "Troubleshooting"
+      ],
+      "settings": {
+        "camera": "Nikon Coolpix P90",
+        "mode": "P/A/S/M secondo obiettivo",
+        "iso": "64-400 consigliato (800+ emergenza)",
+        "note": "Sensore piccolo: evitare ISO alti quando possibile."
+      },
+      "tags": [
+        "principianti",
+        "p90",
+        "fotografia"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 20
+    },
+    {
+      "id": "L05",
+      "title": "Messa a fuoco (punto singolo, blocco fuoco, ricomposizione)",
+      "description": "Lezione micro-learning con teoria essenziale e pratica guidata per Nikon Coolpix P90.",
+      "steps": [
+        "Spiegazione semplice",
+        "Spiegazione pro",
+        "Concetti chiave",
+        "Errori tipici",
+        "Quiz",
+        "Esercizio pratico",
+        "Criteri successo",
+        "Troubleshooting"
+      ],
+      "settings": {
+        "camera": "Nikon Coolpix P90",
+        "mode": "P/A/S/M secondo obiettivo",
+        "iso": "64-400 consigliato (800+ emergenza)",
+        "note": "Sensore piccolo: evitare ISO alti quando possibile."
+      },
+      "tags": [
+        "principianti",
+        "p90",
+        "fotografia"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 20
+    },
+    {
+      "id": "L06",
+      "title": "Composizione (regola dei terzi, linee guida, sfondo pulito)",
+      "description": "Lezione micro-learning con teoria essenziale e pratica guidata per Nikon Coolpix P90.",
+      "steps": [
+        "Spiegazione semplice",
+        "Spiegazione pro",
+        "Concetti chiave",
+        "Errori tipici",
+        "Quiz",
+        "Esercizio pratico",
+        "Criteri successo",
+        "Troubleshooting"
+      ],
+      "settings": {
+        "camera": "Nikon Coolpix P90",
+        "mode": "P/A/S/M secondo obiettivo",
+        "iso": "64-400 consigliato (800+ emergenza)",
+        "note": "Sensore piccolo: evitare ISO alti quando possibile."
+      },
+      "tags": [
+        "principianti",
+        "p90",
+        "fotografia"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 20
+    },
+    {
+      "id": "L07",
+      "title": "Workflow pratico (checklist scatto)",
+      "description": "Lezione micro-learning con teoria essenziale e pratica guidata per Nikon Coolpix P90.",
+      "steps": [
+        "Spiegazione semplice",
+        "Spiegazione pro",
+        "Concetti chiave",
+        "Errori tipici",
+        "Quiz",
+        "Esercizio pratico",
+        "Criteri successo",
+        "Troubleshooting"
+      ],
+      "settings": {
+        "camera": "Nikon Coolpix P90",
+        "mode": "P/A/S/M secondo obiettivo",
+        "iso": "64-400 consigliato (800+ emergenza)",
+        "note": "Sensore piccolo: evitare ISO alti quando possibile."
+      },
+      "tags": [
+        "principianti",
+        "p90",
+        "fotografia"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 20
+    }
+  ],
+  "exercises": [
+    {
+      "id": "EX01",
+      "title": "Triangolo base in 3 scatti",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "P",
+        "recommended": "ISO 100, EV -0.7/0/+0.7"
+      },
+      "tags": [
+        "esposizione"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 10,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX02",
+      "title": "EV +/− confronto",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "P",
+        "recommended": "ISO 100, EV da -1 a +1"
+      },
+      "tags": [
+        "esposizione"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 8,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX03",
+      "title": "Ferma una persona che cammina",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "S",
+        "recommended": "1/250, ISO 200"
+      },
+      "tags": [
+        "movimento"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 12,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX04",
+      "title": "Bici in passaggio",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "S",
+        "recommended": "1/500, ISO 200-400"
+      },
+      "tags": [
+        "movimento"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 15,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX05",
+      "title": "Panning base",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "S",
+        "recommended": "1/30-1/60, ISO 100"
+      },
+      "tags": [
+        "movimento"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 20,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX06",
+      "title": "Ritratto finestra luce morbida",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "A",
+        "recommended": "f più aperto, ISO 100-200"
+      },
+      "tags": [
+        "ritratto"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 15,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX07",
+      "title": "Ritratto con sfondo distante",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "A",
+        "recommended": "tele moderato, ISO 100-200"
+      },
+      "tags": [
+        "ritratto"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 20,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX08",
+      "title": "Autoritratto con timer",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "P",
+        "recommended": "ISO 100, timer 10s"
+      },
+      "tags": [
+        "ritratto"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 10,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX09",
+      "title": "Paesaggio nitido foreground-background",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "A",
+        "recommended": "f/5.6-f/8, ISO 100"
+      },
+      "tags": [
+        "paesaggio"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 20,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX10",
+      "title": "Orizzonte perfetto",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "P",
+        "recommended": "griglia ON, ISO 100"
+      },
+      "tags": [
+        "paesaggio",
+        "composizione"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 10,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX11",
+      "title": "Linee guida in città",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "P",
+        "recommended": "ISO 100-200"
+      },
+      "tags": [
+        "composizione"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 15,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX12",
+      "title": "Regola dei terzi intenzionale",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "P",
+        "recommended": "griglia terzi"
+      },
+      "tags": [
+        "composizione"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 12,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX13",
+      "title": "Sfondo pulito prima/dopo",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "A",
+        "recommended": "f medio, ISO 100"
+      },
+      "tags": [
+        "composizione"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 15,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX14",
+      "title": "Macro oggetto statico",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "A",
+        "recommended": "macro mode, ISO 100-200"
+      },
+      "tags": [
+        "macro"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 15,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX15",
+      "title": "Texture macro con luce laterale",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "A",
+        "recommended": "macro + EV -0.3"
+      },
+      "tags": [
+        "macro"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 20,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX16",
+      "title": "Interni senza flash",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "A",
+        "recommended": "ISO 400, tempo >=1/80"
+      },
+      "tags": [
+        "luce bassa"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 20,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX17",
+      "title": "Notte su treppiede",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "M",
+        "recommended": "ISO 100, 1s-10s"
+      },
+      "tags": [
+        "luce bassa"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 25,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX18",
+      "title": "Vetrina in controluce",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "P",
+        "recommended": "bracketing EV"
+      },
+      "tags": [
+        "esposizione"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 15,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX19",
+      "title": "Controllo rumore ISO test",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "P",
+        "recommended": "ISO 100/400/800"
+      },
+      "tags": [
+        "luce bassa",
+        "esposizione"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 12,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX20",
+      "title": "Zoom lungo mano ferma",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "S",
+        "recommended": "1/500, stabilizzatore ON"
+      },
+      "tags": [
+        "movimento"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 15,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX21",
+      "title": "Sequenza storytelling 3 foto",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "P",
+        "recommended": "ISO 100-200"
+      },
+      "tags": [
+        "composizione"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 25,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX22",
+      "title": "Soggetto fermo in M",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "M",
+        "recommended": "ISO 100, 1/125, f/4-f/5.6"
+      },
+      "tags": [
+        "esposizione"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 20,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX23",
+      "title": "Cielo e terra bilanciati",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "A",
+        "recommended": "EV -0.3/-0.7"
+      },
+      "tags": [
+        "paesaggio"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 20,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX24",
+      "title": "Dettagli architettura simmetrica",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "P",
+        "recommended": "ISO 100, griglia ON"
+      },
+      "tags": [
+        "composizione"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 15,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    },
+    {
+      "id": "EX25",
+      "title": "Mini progetto finale 10 scatti",
+      "description": "Esercizio pratico guidato orientato al risultato.",
+      "steps": [
+        "Imposta settaggi",
+        "Scatta serie richiesta",
+        "Controlla nitidezza/esposizione",
+        "Annota errore principale"
+      ],
+      "settings": {
+        "mode": "Misto",
+        "recommended": "preset a scelta"
+      },
+      "tags": [
+        "esposizione",
+        "movimento",
+        "ritratto",
+        "paesaggio",
+        "macro",
+        "composizione"
+      ],
+      "difficulty": 5,
+      "estimated_minutes": 45,
+      "objective": "Allenare una abilità specifica su P90.",
+      "final_check": "Almeno uno scatto tecnicamente corretto.",
+      "common_errors": [
+        "ISO troppo alto",
+        "Tempo troppo lento",
+        "Fuoco sul punto sbagliato"
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "id": "PR01",
+      "title": "Luce piena - nitido",
+      "description": "Esterni di giorno",
+      "steps": [
+        "Seleziona preset",
+        "Verifica luce",
+        "Scatta e controlla"
+      ],
+      "settings": {
+        "mode": "P",
+        "iso_target": "64-100",
+        "minimum_shutter": "1/250",
+        "f_target": "f/4-f/5.6",
+        "exposure_compensation": "0",
+        "focus": "AF singolo"
+      },
+      "tags": [
+        "preset",
+        "p90"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 1
+    },
+    {
+      "id": "PR02",
+      "title": "Ritratto semplice",
+      "description": "Volti in luce morbida",
+      "steps": [
+        "Seleziona preset",
+        "Verifica luce",
+        "Scatta e controlla"
+      ],
+      "settings": {
+        "mode": "A",
+        "iso_target": "100-200",
+        "minimum_shutter": "1/125",
+        "f_target": "apertura ampia",
+        "exposure_compensation": "+0.3 se serve",
+        "focus": "AF occhi"
+      },
+      "tags": [
+        "preset",
+        "p90"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 1
+    },
+    {
+      "id": "PR03",
+      "title": "Azione/Movimento",
+      "description": "Sport o persone in movimento",
+      "steps": [
+        "Seleziona preset",
+        "Verifica luce",
+        "Scatta e controlla"
+      ],
+      "settings": {
+        "mode": "S",
+        "iso_target": "200-400",
+        "minimum_shutter": "1/500-1/1000",
+        "f_target": "auto",
+        "exposure_compensation": "0/+0.3",
+        "focus": "AF centrale"
+      },
+      "tags": [
+        "preset",
+        "p90"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 1
+    },
+    {
+      "id": "PR04",
+      "title": "Paesaggio",
+      "description": "Panorami e città",
+      "steps": [
+        "Seleziona preset",
+        "Verifica luce",
+        "Scatta e controlla"
+      ],
+      "settings": {
+        "mode": "A",
+        "iso_target": "64-100",
+        "minimum_shutter": "1/125",
+        "f_target": "f/5.6-f/8",
+        "exposure_compensation": "-0.3",
+        "focus": "AF su 1/3 scena"
+      },
+      "tags": [
+        "preset",
+        "p90"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 1
+    },
+    {
+      "id": "PR05",
+      "title": "Interni senza flash",
+      "description": "Casa/locali",
+      "steps": [
+        "Seleziona preset",
+        "Verifica luce",
+        "Scatta e controlla"
+      ],
+      "settings": {
+        "mode": "A",
+        "iso_target": "400 (800 emergenza)",
+        "minimum_shutter": "1/80",
+        "f_target": "apertura ampia",
+        "exposure_compensation": "+0.3",
+        "focus": "AF contrasto"
+      },
+      "tags": [
+        "preset",
+        "p90"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 1
+    },
+    {
+      "id": "PR06",
+      "title": "Notte con treppiede",
+      "description": "Scene statiche notturne",
+      "steps": [
+        "Seleziona preset",
+        "Verifica luce",
+        "Scatta e controlla"
+      ],
+      "settings": {
+        "mode": "M",
+        "iso_target": "64-100",
+        "minimum_shutter": "1s-10s",
+        "f_target": "f/4-f/8",
+        "exposure_compensation": "0/-0.3",
+        "focus": "AF lock/manuale"
+      },
+      "tags": [
+        "preset",
+        "p90"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 1
+    },
+    {
+      "id": "PR07",
+      "title": "Macro dettagli",
+      "description": "Oggetti piccoli",
+      "steps": [
+        "Seleziona preset",
+        "Verifica luce",
+        "Scatta e controlla"
+      ],
+      "settings": {
+        "mode": "A",
+        "iso_target": "100-200",
+        "minimum_shutter": "1/125",
+        "f_target": "f/4-f/5.6",
+        "exposure_compensation": "0",
+        "focus": "AF macro singolo"
+      },
+      "tags": [
+        "preset",
+        "p90"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 1
+    },
+    {
+      "id": "PR08",
+      "title": "Controluce/HDR manuale",
+      "description": "Alte luci difficili",
+      "steps": [
+        "Seleziona preset",
+        "Verifica luce",
+        "Scatta e controlla"
+      ],
+      "settings": {
+        "mode": "P/A",
+        "iso_target": "100",
+        "minimum_shutter": "variabile",
+        "f_target": "f medio",
+        "exposure_compensation": "-1/0/+1",
+        "focus": "AF singolo"
+      },
+      "tags": [
+        "preset",
+        "p90"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 1
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "QZ01",
+      "title": "Quiz lezione 1",
+      "description": "5 domande a scelta multipla con spiegazione.",
+      "steps": [
+        "Rispondi",
+        "Controlla soluzione",
+        "Ripeti errori"
+      ],
+      "settings": {
+        "questions": 5
+      },
+      "tags": [
+        "quiz",
+        "lesson1"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6
+    },
+    {
+      "id": "QZ02",
+      "title": "Quiz lezione 2",
+      "description": "5 domande a scelta multipla con spiegazione.",
+      "steps": [
+        "Rispondi",
+        "Controlla soluzione",
+        "Ripeti errori"
+      ],
+      "settings": {
+        "questions": 5
+      },
+      "tags": [
+        "quiz",
+        "lesson2"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6
+    },
+    {
+      "id": "QZ03",
+      "title": "Quiz lezione 3",
+      "description": "5 domande a scelta multipla con spiegazione.",
+      "steps": [
+        "Rispondi",
+        "Controlla soluzione",
+        "Ripeti errori"
+      ],
+      "settings": {
+        "questions": 5
+      },
+      "tags": [
+        "quiz",
+        "lesson3"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6
+    },
+    {
+      "id": "QZ04",
+      "title": "Quiz lezione 4",
+      "description": "5 domande a scelta multipla con spiegazione.",
+      "steps": [
+        "Rispondi",
+        "Controlla soluzione",
+        "Ripeti errori"
+      ],
+      "settings": {
+        "questions": 5
+      },
+      "tags": [
+        "quiz",
+        "lesson4"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6
+    },
+    {
+      "id": "QZ05",
+      "title": "Quiz lezione 5",
+      "description": "5 domande a scelta multipla con spiegazione.",
+      "steps": [
+        "Rispondi",
+        "Controlla soluzione",
+        "Ripeti errori"
+      ],
+      "settings": {
+        "questions": 5
+      },
+      "tags": [
+        "quiz",
+        "lesson5"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6
+    },
+    {
+      "id": "QZ06",
+      "title": "Quiz lezione 6",
+      "description": "5 domande a scelta multipla con spiegazione.",
+      "steps": [
+        "Rispondi",
+        "Controlla soluzione",
+        "Ripeti errori"
+      ],
+      "settings": {
+        "questions": 5
+      },
+      "tags": [
+        "quiz",
+        "lesson6"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6
+    },
+    {
+      "id": "QZ07",
+      "title": "Quiz lezione 7",
+      "description": "5 domande a scelta multipla con spiegazione.",
+      "steps": [
+        "Rispondi",
+        "Controlla soluzione",
+        "Ripeti errori"
+      ],
+      "settings": {
+        "questions": 5
+      },
+      "tags": [
+        "quiz",
+        "lesson7"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 6
+    }
+  ],
+  "challenges": [
+    {
+      "id": "CH01",
+      "title": "Giorno 1",
+      "description": "Task giornaliero della sfida 7 giorni.",
+      "steps": [
+        "Obiettivo",
+        "Settaggi base",
+        "Varianti",
+        "Checklist",
+        "Bonus shot",
+        "Valutazione 0-3 stelle"
+      ],
+      "settings": {
+        "stars": "0-3",
+        "camera": "P90"
+      },
+      "tags": [
+        "challenge",
+        "7giorni"
+      ],
+      "difficulty": 1,
+      "estimated_minutes": 20
+    },
+    {
+      "id": "CH02",
+      "title": "Giorno 2",
+      "description": "Task giornaliero della sfida 7 giorni.",
+      "steps": [
+        "Obiettivo",
+        "Settaggi base",
+        "Varianti",
+        "Checklist",
+        "Bonus shot",
+        "Valutazione 0-3 stelle"
+      ],
+      "settings": {
+        "stars": "0-3",
+        "camera": "P90"
+      },
+      "tags": [
+        "challenge",
+        "7giorni"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 20
+    },
+    {
+      "id": "CH03",
+      "title": "Giorno 3",
+      "description": "Task giornaliero della sfida 7 giorni.",
+      "steps": [
+        "Obiettivo",
+        "Settaggi base",
+        "Varianti",
+        "Checklist",
+        "Bonus shot",
+        "Valutazione 0-3 stelle"
+      ],
+      "settings": {
+        "stars": "0-3",
+        "camera": "P90"
+      },
+      "tags": [
+        "challenge",
+        "7giorni"
+      ],
+      "difficulty": 3,
+      "estimated_minutes": 20
+    },
+    {
+      "id": "CH04",
+      "title": "Giorno 4",
+      "description": "Task giornaliero della sfida 7 giorni.",
+      "steps": [
+        "Obiettivo",
+        "Settaggi base",
+        "Varianti",
+        "Checklist",
+        "Bonus shot",
+        "Valutazione 0-3 stelle"
+      ],
+      "settings": {
+        "stars": "0-3",
+        "camera": "P90"
+      },
+      "tags": [
+        "challenge",
+        "7giorni"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 20
+    },
+    {
+      "id": "CH05",
+      "title": "Giorno 5",
+      "description": "Task giornaliero della sfida 7 giorni.",
+      "steps": [
+        "Obiettivo",
+        "Settaggi base",
+        "Varianti",
+        "Checklist",
+        "Bonus shot",
+        "Valutazione 0-3 stelle"
+      ],
+      "settings": {
+        "stars": "0-3",
+        "camera": "P90"
+      },
+      "tags": [
+        "challenge",
+        "7giorni"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 20
+    },
+    {
+      "id": "CH06",
+      "title": "Giorno 6",
+      "description": "Task giornaliero della sfida 7 giorni.",
+      "steps": [
+        "Obiettivo",
+        "Settaggi base",
+        "Varianti",
+        "Checklist",
+        "Bonus shot",
+        "Valutazione 0-3 stelle"
+      ],
+      "settings": {
+        "stars": "0-3",
+        "camera": "P90"
+      },
+      "tags": [
+        "challenge",
+        "7giorni"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 20
+    },
+    {
+      "id": "CH07",
+      "title": "Giorno 7",
+      "description": "Task giornaliero della sfida 7 giorni.",
+      "steps": [
+        "Obiettivo",
+        "Settaggi base",
+        "Varianti",
+        "Checklist",
+        "Bonus shot",
+        "Valutazione 0-3 stelle"
+      ],
+      "settings": {
+        "stars": "0-3",
+        "camera": "P90"
+      },
+      "tags": [
+        "challenge",
+        "7giorni"
+      ],
+      "difficulty": 4,
+      "estimated_minutes": 35
+    }
+  ],
+  "diagnosisTree": [
+    {
+      "id": "DG01",
+      "title": "foto_mossa",
+      "description": "Percorso domande-risposte per trovare il fix.",
+      "steps": [
+        "Seleziona problema",
+        "Rispondi a 6-10 domande",
+        "Applica settaggio suggerito"
+      ],
+      "settings": {
+        "questions": [
+          "luce scena",
+          "soggetto fermo/movimento",
+          "modalità",
+          "ISO",
+          "tempo",
+          "zoom",
+          "AF",
+          "EV",
+          "priorità nitidezza/luminosità"
+        ],
+        "output": "Soluzione con modalità, ISO, tempo, EV, focus"
+      },
+      "tags": [
+        "diagnosi",
+        "assistente"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "decision_tree": {
+        "q1": "Qual è il problema principale?",
+        "q2": "La scena è giorno, interno o notte?",
+        "q3": "Il soggetto è fermo o in movimento?",
+        "q4": "Che modalità stai usando?",
+        "q5": "Che ISO stai usando?",
+        "q6": "Il tempo è più lento di 1/125?",
+        "q7": "Stai usando molto zoom?",
+        "q8": "AF su punto singolo?",
+        "q9": "Compensazione EV diversa da 0?",
+        "q10": "Preferisci nitidezza o luminosità?"
+      },
+      "recommended_answer": "Imposta S 1/500, ISO 200-400, stabilizzazione ON, riduci zoom se possibile."
+    },
+    {
+      "id": "DG02",
+      "title": "foto_buia",
+      "description": "Percorso domande-risposte per trovare il fix.",
+      "steps": [
+        "Seleziona problema",
+        "Rispondi a 6-10 domande",
+        "Applica settaggio suggerito"
+      ],
+      "settings": {
+        "questions": [
+          "luce scena",
+          "soggetto fermo/movimento",
+          "modalità",
+          "ISO",
+          "tempo",
+          "zoom",
+          "AF",
+          "EV",
+          "priorità nitidezza/luminosità"
+        ],
+        "output": "Soluzione con modalità, ISO, tempo, EV, focus"
+      },
+      "tags": [
+        "diagnosi",
+        "assistente"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "decision_tree": {
+        "q1": "Qual è il problema principale?",
+        "q2": "La scena è giorno, interno o notte?",
+        "q3": "Il soggetto è fermo o in movimento?",
+        "q4": "Che modalità stai usando?",
+        "q5": "Che ISO stai usando?",
+        "q6": "Il tempo è più lento di 1/125?",
+        "q7": "Stai usando molto zoom?",
+        "q8": "AF su punto singolo?",
+        "q9": "Compensazione EV diversa da 0?",
+        "q10": "Preferisci nitidezza o luminosità?"
+      },
+      "recommended_answer": "Apri diaframma, ISO 400, tempo minimo 1/80, cerca luce finestra o appoggio."
+    },
+    {
+      "id": "DG03",
+      "title": "foto_bruciata",
+      "description": "Percorso domande-risposte per trovare il fix.",
+      "steps": [
+        "Seleziona problema",
+        "Rispondi a 6-10 domande",
+        "Applica settaggio suggerito"
+      ],
+      "settings": {
+        "questions": [
+          "luce scena",
+          "soggetto fermo/movimento",
+          "modalità",
+          "ISO",
+          "tempo",
+          "zoom",
+          "AF",
+          "EV",
+          "priorità nitidezza/luminosità"
+        ],
+        "output": "Soluzione con modalità, ISO, tempo, EV, focus"
+      },
+      "tags": [
+        "diagnosi",
+        "assistente"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "decision_tree": {
+        "q1": "Qual è il problema principale?",
+        "q2": "La scena è giorno, interno o notte?",
+        "q3": "Il soggetto è fermo o in movimento?",
+        "q4": "Che modalità stai usando?",
+        "q5": "Che ISO stai usando?",
+        "q6": "Il tempo è più lento di 1/125?",
+        "q7": "Stai usando molto zoom?",
+        "q8": "AF su punto singolo?",
+        "q9": "Compensazione EV diversa da 0?",
+        "q10": "Preferisci nitidezza o luminosità?"
+      },
+      "recommended_answer": "Compensazione EV -0.7, ISO 100, ricomponi evitando sorgenti dirette nel frame."
+    },
+    {
+      "id": "DG04",
+      "title": "foto_rumorosa",
+      "description": "Percorso domande-risposte per trovare il fix.",
+      "steps": [
+        "Seleziona problema",
+        "Rispondi a 6-10 domande",
+        "Applica settaggio suggerito"
+      ],
+      "settings": {
+        "questions": [
+          "luce scena",
+          "soggetto fermo/movimento",
+          "modalità",
+          "ISO",
+          "tempo",
+          "zoom",
+          "AF",
+          "EV",
+          "priorità nitidezza/luminosità"
+        ],
+        "output": "Soluzione con modalità, ISO, tempo, EV, focus"
+      },
+      "tags": [
+        "diagnosi",
+        "assistente"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "decision_tree": {
+        "q1": "Qual è il problema principale?",
+        "q2": "La scena è giorno, interno o notte?",
+        "q3": "Il soggetto è fermo o in movimento?",
+        "q4": "Che modalità stai usando?",
+        "q5": "Che ISO stai usando?",
+        "q6": "Il tempo è più lento di 1/125?",
+        "q7": "Stai usando molto zoom?",
+        "q8": "AF su punto singolo?",
+        "q9": "Compensazione EV diversa da 0?",
+        "q10": "Preferisci nitidezza o luminosità?"
+      },
+      "recommended_answer": "Scendi a ISO 200-400, aumenta luce o usa treppiede, evita sottoesposizione da schiarire."
+    },
+    {
+      "id": "DG05",
+      "title": "soggetto_sfocato",
+      "description": "Percorso domande-risposte per trovare il fix.",
+      "steps": [
+        "Seleziona problema",
+        "Rispondi a 6-10 domande",
+        "Applica settaggio suggerito"
+      ],
+      "settings": {
+        "questions": [
+          "luce scena",
+          "soggetto fermo/movimento",
+          "modalità",
+          "ISO",
+          "tempo",
+          "zoom",
+          "AF",
+          "EV",
+          "priorità nitidezza/luminosità"
+        ],
+        "output": "Soluzione con modalità, ISO, tempo, EV, focus"
+      },
+      "tags": [
+        "diagnosi",
+        "assistente"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "decision_tree": {
+        "q1": "Qual è il problema principale?",
+        "q2": "La scena è giorno, interno o notte?",
+        "q3": "Il soggetto è fermo o in movimento?",
+        "q4": "Che modalità stai usando?",
+        "q5": "Che ISO stai usando?",
+        "q6": "Il tempo è più lento di 1/125?",
+        "q7": "Stai usando molto zoom?",
+        "q8": "AF su punto singolo?",
+        "q9": "Compensazione EV diversa da 0?",
+        "q10": "Preferisci nitidezza o luminosità?"
+      },
+      "recommended_answer": "AF punto singolo sul soggetto, mezzo scatto, ricomposizione minima, verifica distanza."
+    },
+    {
+      "id": "DG06",
+      "title": "colori_strani",
+      "description": "Percorso domande-risposte per trovare il fix.",
+      "steps": [
+        "Seleziona problema",
+        "Rispondi a 6-10 domande",
+        "Applica settaggio suggerito"
+      ],
+      "settings": {
+        "questions": [
+          "luce scena",
+          "soggetto fermo/movimento",
+          "modalità",
+          "ISO",
+          "tempo",
+          "zoom",
+          "AF",
+          "EV",
+          "priorità nitidezza/luminosità"
+        ],
+        "output": "Soluzione con modalità, ISO, tempo, EV, focus"
+      },
+      "tags": [
+        "diagnosi",
+        "assistente"
+      ],
+      "difficulty": 2,
+      "estimated_minutes": 3,
+      "decision_tree": {
+        "q1": "Qual è il problema principale?",
+        "q2": "La scena è giorno, interno o notte?",
+        "q3": "Il soggetto è fermo o in movimento?",
+        "q4": "Che modalità stai usando?",
+        "q5": "Che ISO stai usando?",
+        "q6": "Il tempo è più lento di 1/125?",
+        "q7": "Stai usando molto zoom?",
+        "q8": "AF su punto singolo?",
+        "q9": "Compensazione EV diversa da 0?",
+        "q10": "Preferisci nitidezza o luminosità?"
+      },
+      "recommended_answer": "Cambia bilanciamento bianco (Auto/Tungsteno/Luce giorno) e evita mix di luci diverse."
+    }
+  ]
+}
