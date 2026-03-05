@@ -3,32 +3,250 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project MCH</title>
+    <title>Corso Fotografia Nikon Coolpix P90</title>
     <style>
-      body { font-family: system-ui, Arial, sans-serif; margin: 40px; line-height: 1.5; }
-      .card { max-width: 680px; padding: 24px; border: 1px solid #ddd; border-radius: 12px; }
-      button { padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; cursor: pointer; }
-      small { color: #666; }
+      :root {
+        --bg: #0b1020;
+        --panel: #121935;
+        --panel-soft: #1a2348;
+        --text: #e9ecf8;
+        --muted: #aeb6d6;
+        --accent: #67e8f9;
+        --accent-2: #a78bfa;
+        --ok: #34d399;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        background: radial-gradient(circle at top, #1d2858 0%, var(--bg) 45%);
+        color: var(--text);
+      }
+      .app {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .hero {
+        background: linear-gradient(135deg, #1b2552, #0f1633);
+        border: 1px solid #33407a;
+        border-radius: 16px;
+        padding: 20px;
+        margin-bottom: 16px;
+      }
+      h1 { margin: 0 0 8px; font-size: 1.8rem; }
+      p { margin: 0; color: var(--muted); }
+      .pillbar, .stats, .grid {
+        display: grid;
+        gap: 10px;
+      }
+      .pillbar {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        margin: 14px 0;
+      }
+      .pill {
+        background: var(--panel);
+        color: var(--text);
+        border: 1px solid #394785;
+        border-radius: 999px;
+        padding: 8px 10px;
+        text-align: center;
+        font-size: .9rem;
+      }
+      .stats { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+      .stat {
+        background: var(--panel);
+        border: 1px solid #2f3b75;
+        border-radius: 12px;
+        padding: 12px;
+      }
+      .stat strong { display: block; color: var(--accent); font-size: 1.35rem; }
+      .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 16px 0;
+      }
+      .tab {
+        border: 1px solid #44518f;
+        background: #121b3c;
+        color: var(--text);
+        border-radius: 10px;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+      .tab.active { background: linear-gradient(120deg, #2b3e8e, #5a43b8); border-color: #7b86c8; }
+      .panel {
+        background: var(--panel-soft);
+        border: 1px solid #31407a;
+        border-radius: 14px;
+        padding: 16px;
+        min-height: 320px;
+      }
+      .grid { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+      .card {
+        background: #121935;
+        border: 1px solid #2e3b77;
+        border-radius: 12px;
+        padding: 12px;
+      }
+      .card h3 { margin: 0 0 6px; font-size: 1rem; }
+      .meta { color: var(--muted); font-size: .85rem; margin-bottom: 8px; }
+      .tag {
+        display: inline-block;
+        background: #24305f;
+        color: #cfd7f7;
+        border-radius: 999px;
+        font-size: .75rem;
+        padding: 3px 8px;
+        margin-right: 6px;
+        margin-top: 4px;
+      }
+      .cta {
+        margin-top: 16px;
+        background: #0d1430;
+        border: 1px dashed #4f61a8;
+        border-radius: 10px;
+        padding: 10px;
+        color: #b8c2ea;
+      }
+      .ok { color: var(--ok); font-weight: 600; }
     </style>
   </head>
   <body>
-    <div class="card">
-      <h1>🚀 Project MCH</h1>
-      <p>Modifica effettuata da Codex</p>
-      <p>Se stai leggendo questo, GitHub → Vercel funziona.</p>
+    <main class="app">
+      <section class="hero">
+        <h1>Corso Fotografia Nikon Coolpix P90</h1>
+        <p>Interfaccia nuova, pratica e pronta per app/sito. Niente schermata demo iniziale: qui trovi lezioni, esercizi, preset e diagnosi errori.</p>
+        <div class="pillbar">
+          <div class="pill">Home</div>
+          <div class="pill">Lezioni</div>
+          <div class="pill">Esercizi</div>
+          <div class="pill">Preset</div>
+          <div class="pill">Sfide</div>
+          <div class="pill">Diagnosi</div>
+          <div class="pill">Glossario</div>
+          <div class="pill">Progressi</div>
+          <div class="pill">FAQ</div>
+        </div>
+        <div class="stats" id="stats"></div>
+      </section>
 
-      <button id="btn">Cliccami</button>
-      <p><small id="msg">Nessun click ancora…</small></p>
-    </div>
+      <nav class="tabs" id="tabs"></nav>
+      <section class="panel" id="panel">
+        <p>Carico contenuti…</p>
+      </section>
+    </main>
 
     <script>
-      const btn = document.getElementById("btn");
-      const msg = document.getElementById("msg");
-      let count = 0;
+      const sections = [
+        { id: "lessons", label: "Lezioni" },
+        { id: "exercises", label: "Esercizi" },
+        { id: "presets", label: "Preset" },
+        { id: "challenges", label: "Sfida 7 giorni" },
+        { id: "diagnosisTree", label: "Diagnosi" },
+      ];
 
-      btn.addEventListener("click", () => {
-        count++;
-        msg.textContent = `Click: ${count}`;
+      function renderStats(data) {
+        const stats = document.getElementById("stats");
+        const items = [
+          ["Lezioni", data.lessons.length],
+          ["Esercizi", data.exercises.length],
+          ["Preset", data.presets.length],
+          ["Quiz", data.quizzes.length],
+          ["Sfide", data.challenges.length],
+          ["Diagnosi", data.diagnosisTree.length],
+        ];
+        stats.innerHTML = items
+          .map(([label, n]) => `<div class="stat"><strong>${n}</strong>${label}</div>`)
+          .join("");
+      }
+
+      function renderCards(items, mapper) {
+        return `<div class="grid">${items.map(mapper).join("")}</div>`;
+      }
+
+      function renderSection(data, key) {
+        const panel = document.getElementById("panel");
+        if (key === "lessons") {
+          panel.innerHTML = renderCards(data.lessons, l => `
+            <article class="card">
+              <h3>${l.id} · ${l.title}</h3>
+              <div class="meta">Difficoltà ${l.difficulty}/5 · ${l.estimated_minutes} min</div>
+              <p>${l.description}</p>
+              <div>${l.tags.map(t => `<span class="tag">${t}</span>`).join("")}</div>
+            </article>
+          `) + `<div class="cta"><span class="ok">Consiglio rapido:</span> inizia da L1 e fai subito l'esercizio pratico.</div>`;
+          return;
+        }
+        if (key === "exercises") {
+          panel.innerHTML = renderCards(data.exercises, e => `
+            <article class="card">
+              <h3>${e.id} · ${e.title}</h3>
+              <div class="meta">Difficoltà ${e.difficulty}/5 · ${e.estimated_minutes} min</div>
+              <p><strong>Settaggio:</strong> ${e.settings.mode} · ${e.settings.recommended}</p>
+              <div>${e.tags.map(t => `<span class="tag">${t}</span>`).join("")}</div>
+            </article>
+          `) + `<div class="cta"><span class="ok">Focus P90:</span> se c'è poca luce, prova prima ad aggiungere luce o appoggiarti prima di alzare troppo gli ISO.</div>`;
+          return;
+        }
+        if (key === "presets") {
+          panel.innerHTML = renderCards(data.presets, p => `
+            <article class="card">
+              <h3>${p.title}</h3>
+              <div class="meta">${p.description}</div>
+              <p><strong>${p.settings.mode}</strong> · ISO ${p.settings.iso_target} · Tmin ${p.settings.minimum_shutter}</p>
+              <p>f/: ${p.settings.f_target} · EV: ${p.settings.exposure_compensation}</p>
+            </article>
+          `);
+          return;
+        }
+        if (key === "challenges") {
+          panel.innerHTML = renderCards(data.challenges, c => `
+            <article class="card">
+              <h3>${c.title}</h3>
+              <div class="meta">${c.estimated_minutes} min · ${c.settings.stars} stelle</div>
+              <p>${c.description}</p>
+              <p class="meta">Checklist: obiettivo, settaggi, varianti, bonus.</p>
+            </article>
+          `);
+          return;
+        }
+        if (key === "diagnosisTree") {
+          panel.innerHTML = renderCards(data.diagnosisTree, d => `
+            <article class="card">
+              <h3>${d.title.replaceAll("_", " ")}</h3>
+              <div class="meta">${d.estimated_minutes} min · ${d.settings.questions.length} domande</div>
+              <p>${d.recommended_answer}</p>
+            </article>
+          `) + `<div class="cta"><span class="ok">Come usarla:</span> scegli il problema, rispondi alle domande e applica il settaggio proposto.</div>`;
+        }
+      }
+
+      async function init() {
+        const tabs = document.getElementById("tabs");
+        const res = await fetch("./photography_course_data.json");
+        const data = await res.json();
+
+        renderStats(data);
+
+        tabs.innerHTML = sections
+          .map((s, i) => `<button class="tab ${i === 0 ? "active" : ""}" data-key="${s.id}">${s.label}</button>`)
+          .join("");
+
+        tabs.addEventListener("click", (e) => {
+          const btn = e.target.closest("button[data-key]");
+          if (!btn) return;
+          document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+          btn.classList.add("active");
+          renderSection(data, btn.dataset.key);
+        });
+
+        renderSection(data, "lessons");
+      }
+
+      init().catch(() => {
+        document.getElementById("panel").innerHTML = `<p>Errore nel caricamento dei contenuti. Controlla che <code>photography_course_data.json</code> sia presente.</p>`;
       });
     </script>
   </body>
