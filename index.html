@@ -3,33 +3,267 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project MCH</title>
+    <title>Corso Base di Fotografia — Nikon Coolpix P90</title>
     <style>
-      body { font-family: system-ui, Arial, sans-serif; margin: 40px; line-height: 1.5; }
-      .card { max-width: 680px; padding: 24px; border: 1px solid #ddd; border-radius: 12px; }
-      button { padding: 10px 14px; border-radius: 10px; border: 1px solid #ccc; cursor: pointer; }
-      small { color: #666; }
+      :root {
+        --bg: #0f172a;
+        --panel: #111b38;
+        --panel-2: #1a2852;
+        --line: #33467d;
+        --txt: #ecf1ff;
+        --muted: #b5c1e7;
+        --accent: #60a5fa;
+        --ok: #34d399;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; font-family: Inter, system-ui, Arial, sans-serif; background: linear-gradient(#0b1022, #111a35); color: var(--txt); }
+      .container { max-width: 1150px; margin: 0 auto; padding: 18px; }
+      .hero, .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; }
+      .hero { padding: 18px; }
+      h1 { margin: 0 0 8px; font-size: 1.8rem; }
+      h2 { margin: 0 0 10px; }
+      p { color: var(--muted); }
+      .row { display: grid; gap: 12px; }
+      .stats { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); }
+      .stat { background: var(--panel-2); border: 1px solid var(--line); border-radius: 10px; padding: 10px; }
+      .stat strong { display:block; color: var(--accent); font-size: 1.25rem; }
+      .topnav { display:flex; flex-wrap:wrap; gap:8px; margin: 12px 0 0; }
+      button, select, input { font: inherit; }
+      .tab { background:#122047; color:var(--txt); border:1px solid #3b5292; border-radius: 10px; padding: 8px 12px; cursor:pointer; }
+      .tab[aria-selected="true"] { background: linear-gradient(90deg, #2a4a9a, #4f46e5); }
+      .panel { margin-top: 14px; padding: 14px; min-height: 420px; }
+      .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; }
+      .card { background: var(--panel-2); border:1px solid var(--line); border-radius: 10px; padding: 12px; }
+      .meta { color: var(--muted); font-size: .9rem; }
+      .tag { display:inline-block; margin: 6px 6px 0 0; padding: 2px 8px; background:#20305f; border-radius:999px; font-size:.78rem; }
+      .actions { display:flex; flex-wrap:wrap; gap:8px; margin-top: 10px; }
+      .btn { border:1px solid #5470bb; background:#1e3063; color:#fff; border-radius: 8px; padding:6px 10px; cursor:pointer; }
+      .btn.alt { background: transparent; }
+      .split { display:grid; grid-template-columns: 1.2fr 1fr; gap: 12px; }
+      table { width:100%; border-collapse: collapse; }
+      th, td { border: 1px solid var(--line); padding: 8px; text-align:left; }
+      th { background: #22376c; }
+      details { background:#15234a; border:1px solid var(--line); border-radius:8px; padding:8px 10px; }
+      .notice { padding:10px; border:1px dashed #4f67aa; border-radius:8px; color:#c7d3fa; margin-top:10px; }
+      .success { color: var(--ok); }
+      .sr-only { position:absolute; left:-9999px; }
+      @media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
     </style>
   </head>
   <body>
-    <div class="card">
-      <h1>🚀 Project MCH</h1>
-      <p>Modifica effettuata da Codex</p>
-      <p>Se stai leggendo questo, GitHub → Vercel funziona.</p>
+    <main class="container">
+      <section class="hero" aria-labelledby="title">
+        <h1 id="title">Corso Base di Fotografia — Nikon Coolpix P90</h1>
+        <p>Guida pratica per principianti: esposizione, composizione, preset, diagnosi errori e sfida 7 giorni.</p>
+        <div class="row stats" id="stats" aria-label="Statistiche corso"></div>
+        <nav class="topnav" id="tabs" role="tablist" aria-label="Sezioni principali"></nav>
+      </section>
 
-      <button id="btn">Cliccami</button>
-      <p><small id="msg">Nessun click ancora…</small></p>
-    </div>
+      <section id="panel" class="panel" tabindex="-1" aria-live="polite"></section>
+      <p id="live" class="sr-only" aria-live="polite"></p>
+    </main>
 
     <script>
-      const btn = document.getElementById("btn");
-      const msg = document.getElementById("msg");
-      let count = 0;
+      const SECTIONS = [
+        ["home", "Home"], ["lessons", "Lezioni"], ["exercises", "Esercizi"], ["presets", "Preset"],
+        ["diagnosis", "Diagnosi errori"], ["challenges", "Sfida 7 giorni"], ["glossary", "Glossario"],
+        ["progress", "Progressi"], ["faq", "FAQ"]
+      ];
+      const state = { data: null, tab: "home", lesson: null, challenge: 0, diagnosisAnswers: {}, stars: JSON.parse(localStorage.getItem("p90-stars") || "{}") };
 
-      btn.addEventListener("click", () => {
-        count++;
-        msg.textContent = `Click: ${count}`;
+      const panel = document.getElementById("panel");
+      const live = document.getElementById("live");
+      const say = (text) => (live.textContent = text);
+
+      function safe(str) { return String(str ?? ""); }
+
+      function renderStats(d) {
+        const items = [
+          ["Lezioni", d.lessons.length], ["Esercizi", d.exercises.length], ["Preset", d.presets.length],
+          ["Quiz", d.quizzes.length], ["Sfide", d.challenges.length], ["Diagnosi", d.diagnosisTree.length]
+        ];
+        document.getElementById("stats").innerHTML = items.map(([l,n]) => `<div class="stat"><strong>${n}</strong>${l}</div>`).join("");
+      }
+
+      function renderTabs() {
+        const tabs = document.getElementById("tabs");
+        tabs.innerHTML = SECTIONS.map(([k,l]) => `<button role="tab" class="tab" aria-selected="${state.tab===k}" data-tab="${k}">${l}</button>`).join("");
+      }
+
+      function homeView(d) {
+        return `
+          <h2>Benvenuto 👋</h2>
+          <p>Qui trovi tutto il corso in modo pratico: entra in <strong>Lezioni</strong>, fai <strong>Esercizi</strong>, usa i <strong>Preset</strong> e se una foto viene male apri <strong>Diagnosi errori</strong>.</p>
+          <div class="grid" style="margin-top:10px">
+            <article class="card"><h3>Continua da dove eri</h3><p class="meta">Ultima lezione: ${safe(localStorage.getItem("p90-last-lesson") || "Nessuna")}</p><div class="actions"><button class="btn" data-go="lessons">Apri lezioni</button></div></article>
+            <article class="card"><h3>Preset rapido</h3><p class="meta">Carica un settaggio e scatta subito.</p><div class="actions"><button class="btn" data-go="presets">Apri preset</button></div></article>
+            <article class="card"><h3>Problema tecnico?</h3><p class="meta">Diagnosi guidata in meno di 2 minuti.</p><div class="actions"><button class="btn" data-go="diagnosis">Apri diagnosi</button></div></article>
+          </div>
+        `;
+      }
+
+      function lessonsView(d) {
+        const selected = d.lessons.find(l => l.id === state.lesson) || d.lessons[0];
+        state.lesson = selected.id;
+        localStorage.setItem("p90-last-lesson", selected.id);
+        const list = d.lessons.map(l => `<button class="btn alt" data-lesson="${l.id}">${l.id} · ${l.title}</button>`).join(" ");
+        return `
+          <div class="split">
+            <div class="card">
+              <h2>${selected.id} — ${selected.title}</h2>
+              <p>${selected.description}</p>
+              <p class="meta">Difficoltà ${selected.difficulty}/5 · ${selected.estimated_minutes} min</p>
+              <p><strong>Struttura:</strong> ${selected.steps.join(" • ")}</p>
+              <div>${selected.tags.map(t=>`<span class="tag">${t}</span>`).join("")}</div>
+              <div class="notice">Tip: apri la sezione <strong>Esercizi</strong> e filtra per tag per allenarti subito sulla lezione corrente.</div>
+            </div>
+            <aside class="card">
+              <h3>Tutte le lezioni</h3>
+              <div class="actions">${list}</div>
+            </aside>
+          </div>
+        `;
+      }
+
+      function exercisesView(d) {
+        const tags = [...new Set(d.exercises.flatMap(e => e.tags))];
+        const filter = safe(state.exerciseFilter || "all");
+        const cards = d.exercises
+          .filter(e => filter === "all" || e.tags.includes(filter))
+          .map(e => `<article class="card"><h3>${e.id} · ${e.title}</h3><p class="meta">${e.estimated_minutes} min · diff ${e.difficulty}/5</p><p><strong>Obiettivo:</strong> ${e.objective}</p><p><strong>Settaggi:</strong> ${e.settings.mode} · ${e.settings.recommended}</p><p>${e.final_check}</p><div>${e.tags.map(t=>`<span class="tag">${t}</span>`).join("")}</div></article>`)
+          .join("");
+        return `
+          <h2>Esercizi interattivi</h2>
+          <div class="actions">
+            <label for="filter">Filtra per tag:</label>
+            <select id="filter">
+              <option value="all" ${filter==="all"?"selected":""}>Tutti</option>
+              ${tags.map(t=>`<option value="${t}" ${filter===t?"selected":""}>${t}</option>`).join("")}
+            </select>
+          </div>
+          <div class="grid" style="margin-top:10px">${cards}</div>
+        `;
+      }
+
+      function presetsView(d) {
+        return `
+          <h2>Preset utili</h2>
+          <table aria-label="Preset Nikon P90">
+            <thead><tr><th>Preset</th><th>Modalità</th><th>ISO</th><th>Tempo min</th><th>f/ target</th><th>EV</th><th>Fuoco</th></tr></thead>
+            <tbody>${d.presets.map(p=>`<tr><td>${p.title}</td><td>${p.settings.mode}</td><td>${p.settings.iso_target}</td><td>${p.settings.minimum_shutter}</td><td>${p.settings.f_target}</td><td>${p.settings.exposure_compensation}</td><td>${p.settings.focus}</td></tr>`).join("")}</tbody>
+          </table>
+        `;
+      }
+
+      function diagnosisView(d) {
+        const problem = state.problem || d.diagnosisTree[0].id;
+        const node = d.diagnosisTree.find(x => x.id === problem) || d.diagnosisTree[0];
+        const questions = Object.entries(node.decision_tree).map(([k,v]) => `<label>${v}<input data-q="${k}" value="${safe(state.diagnosisAnswers[k] || "")}" placeholder="Scrivi risposta breve" /></label>`).join("<br/><br/>");
+        return `
+          <h2>Diagnosi errori</h2>
+          <div class="actions"><label for="problem">Problema:</label><select id="problem">${d.diagnosisTree.map(x=>`<option value="${x.id}" ${x.id===problem?"selected":""}>${x.title.replaceAll("_"," ")}</option>`).join("")}</select></div>
+          <div class="split" style="margin-top:10px">
+            <div class="card"><h3>Questionario guidato</h3>${questions}<div class="actions"><button class="btn" id="solve">Ottieni soluzione</button></div></div>
+            <div class="card"><h3>Soluzione consigliata</h3><p id="solution">${safe(state.solution || "Compila il questionario e premi “Ottieni soluzione”.")}</p><p class="meta">Suggerimento base: ${node.recommended_answer}</p></div>
+          </div>
+        `;
+      }
+
+      function challengesView(d) {
+        const idx = Math.max(0, Math.min(state.challenge, d.challenges.length - 1));
+        const day = d.challenges[idx];
+        const stars = Number(state.stars[day.id] || 0);
+        return `
+          <h2>Sfida 7 giorni</h2>
+          <div class="actions">${d.challenges.map((c,i)=>`<button class="btn alt" data-day="${i}">${c.title}</button>`).join("")}</div>
+          <article class="card" style="margin-top:10px">
+            <h3>${day.title}</h3>
+            <p>${day.description}</p>
+            <p class="meta">Durata: ${day.estimated_minutes} min</p>
+            <ul>${day.steps.map(s=>`<li>${s}</li>`).join("")}</ul>
+            <div class="actions">
+              <label for="stars">Valutazione (0-3 stelle):</label>
+              <select id="stars">${[0,1,2,3].map(n=>`<option value="${n}" ${n===stars?"selected":""}>${n}</option>`).join("")}</select>
+              <button class="btn" id="saveStars" data-id="${day.id}">Salva</button>
+            </div>
+          </article>
+        `;
+      }
+
+      function glossaryView() {
+        const terms = [
+          ["Esposizione","Quantità di luce nella foto."],["Tempo di scatto","Quanto dura lo scatto."],["Diaframma (f/)","Apertura che influenza luce e profondità."],
+          ["ISO","Sensibilità sensore: più alto = più rumore."],["AF","Messa a fuoco automatica."],["EV","Compensazione per schiarire/scurire."]
+        ];
+        return `<h2>Glossario rapido</h2>${terms.map(([t,d])=>`<details><summary>${t}</summary><p>${d}</p></details>`).join("")}`;
+      }
+
+      function progressView(d) {
+        const done = Object.values(state.stars).filter(v => Number(v) > 0).length;
+        return `<h2>Progressi</h2><p>Sfide completate con almeno 1 stella: <strong class="success">${done}/${d.challenges.length}</strong></p><p>Ultima lezione vista: <strong>${safe(localStorage.getItem("p90-last-lesson") || "Nessuna")}</strong></p>`;
+      }
+
+      function faqView() {
+        const faqs = [
+          ["Foto rumorose in interno?","Tieni ISO 400 come base, evita 800+ se puoi, avvicinati alla luce finestra."],
+          ["Perché la foto è mossa?","Tempo troppo lento: usa S a 1/250 o più veloce, soprattutto con zoom."],
+          ["Sfondo non sfocato?","Con P90 è normale: usa zoom, soggetto vicino e sfondo lontano."]
+        ];
+        return `<h2>FAQ</h2>${faqs.map(([q,a])=>`<details><summary>${q}</summary><p>${a}</p></details>`).join("")}`;
+      }
+
+      function render() {
+        const d = state.data;
+        renderTabs();
+        if (state.tab === "home") panel.innerHTML = homeView(d);
+        if (state.tab === "lessons") panel.innerHTML = lessonsView(d);
+        if (state.tab === "exercises") panel.innerHTML = exercisesView(d);
+        if (state.tab === "presets") panel.innerHTML = presetsView(d);
+        if (state.tab === "diagnosis") panel.innerHTML = diagnosisView(d);
+        if (state.tab === "challenges") panel.innerHTML = challengesView(d);
+        if (state.tab === "glossary") panel.innerHTML = glossaryView();
+        if (state.tab === "progress") panel.innerHTML = progressView(d);
+        if (state.tab === "faq") panel.innerHTML = faqView();
+      }
+
+      document.addEventListener("click", (e) => {
+        const tab = e.target.closest("[data-tab]");
+        if (tab) { state.tab = tab.dataset.tab; render(); panel.focus(); say(`Sezione ${tab.textContent}`); }
+        const go = e.target.closest("[data-go]");
+        if (go) { state.tab = go.dataset.go; render(); panel.focus(); }
+        const ls = e.target.closest("[data-lesson]");
+        if (ls) { state.lesson = ls.dataset.lesson; render(); }
+        const day = e.target.closest("[data-day]");
+        if (day) { state.challenge = Number(day.dataset.day); render(); }
+        if (e.target.id === "solve") {
+          const node = state.data.diagnosisTree.find(x => x.id === state.problem) || state.data.diagnosisTree[0];
+          state.solution = `In base alle risposte: ${node.recommended_answer}`;
+          render();
+        }
+        if (e.target.id === "saveStars") {
+          const id = e.target.dataset.id;
+          const val = document.getElementById("stars").value;
+          state.stars[id] = val;
+          localStorage.setItem("p90-stars", JSON.stringify(state.stars));
+          say(`Valutazione salvata: ${val} stelle`);
+          state.tab = "progress";
+          render();
+        }
       });
+
+      document.addEventListener("change", (e) => {
+        if (e.target.id === "filter") { state.exerciseFilter = e.target.value; render(); }
+        if (e.target.id === "problem") { state.problem = e.target.value; state.solution = ""; state.diagnosisAnswers = {}; render(); }
+      });
+
+      document.addEventListener("input", (e) => {
+        if (e.target.dataset.q) state.diagnosisAnswers[e.target.dataset.q] = e.target.value;
+      });
+
+      fetch("./photography_course_data.json")
+        .then(r => r.json())
+        .then(data => { state.data = data; renderStats(data); render(); })
+        .catch(() => { panel.innerHTML = '<p>Errore caricamento dati corso. Verifica <code>photography_course_data.json</code>.</p>'; });
     </script>
   </body>
 </html>
